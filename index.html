@@ -197,7 +197,7 @@
                                 luctus venenatis,lectus magna fringilla urna, porttitor rhoncus dolor purus non enim
                             </p>
                             <div class="link">
-                                <a href="#"> Learn more </a>
+                                <a href="./amoGroup.html"> Learn more </a>
                             </div>
                         </div>
                     </div>
@@ -342,11 +342,13 @@
     <!-- App Js file -->
     <script src="./assets/js/app.js"></script>
     <script>
-
         // Swiper for home page
-
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
