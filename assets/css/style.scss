@@ -32,9 +32,22 @@ body {
 #header {
     padding-top: 48px;
     position: relative;
-    z-index: 10;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        content: "";
+        backdrop-filter: blur(3px);
+        z-index: 100;
+    }
 
     .container {
+        position: relative;
+        z-index: 10000;
+
         .row {
             display: flex;
             align-items: center;
