@@ -700,7 +700,7 @@ main #carrer .container .row .carrer-area .carrer-faq .carrer-top p {
 main #carrer .container .row .carrer-area .carrer-faq .faq-text {
   opacity: 0;
   visibility: hidden;
-  overflow: hidden;
+  overflow: hidden !important;
   max-height: 0;
   transition: 600ms ease;
 }
@@ -886,8 +886,11 @@ main #carrer .container .row .carrer-area .carrer-faq .faq-text p {
     margin-top: 40px;
   }
   main #carrer .container .row .carrer-area .apply {
-    width: 100%;
-    font-size: 25px;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
   }
   main #carrer .container .row .carrer-area .carrer-item {
     flex-direction: column;

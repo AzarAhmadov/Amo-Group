@@ -785,6 +785,7 @@ main {
                             justify-content: space-between;
                             align-items: center;
 
+
                             svg {
                                 transition: 300ms linear;
                                 display: flex;
@@ -828,7 +829,7 @@ main {
                         .faq-text {
                             opacity: 0;
                             visibility: hidden;
-                            overflow: hidden;
+                            overflow: hidden !important;
                             max-height: 0;
                             transition: 600ms ease;
 
@@ -1083,8 +1084,10 @@ main {
                         margin-top: 40px;
 
                         .apply {
-                            width: 100%;
-                            font-size: 25px;
+                            width: max-content;
+                            font-size: 20px;
+                            margin-top: 30px;
+                            padding: 0 20px;
                         }
 
                         .carrer-item {
