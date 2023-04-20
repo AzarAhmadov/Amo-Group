@@ -1997,6 +1997,7 @@ main {
 
                     .carrer-area {
                         padding-bottom: 10px;
+
                         button {
                             margin-top: 30px;
                             padding: 10px 20px;
@@ -2150,12 +2151,11 @@ main {
         }
 
         #article {
-            .container{
-                .row{
-                    .article-item{
-                        .article-top{
-                            
-                        padding: 15px 0 20px;
+            .container {
+                .row {
+                    .article-item {
+                        .article-top {
+                            padding: 15px 0 30px;
                         }
                     }
                 }
