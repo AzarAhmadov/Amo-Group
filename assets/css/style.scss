@@ -1074,11 +1074,12 @@ main {
                     span {
                         font-weight: bold;
                         padding-right: 10px;
+                        color: $color-2;
                     }
 
                     p {
                         font-weight: 300;
-                        color: $color-2;
+                        color: $color-2 !important;
                     }
                 }
             }

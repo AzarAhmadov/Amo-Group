@@ -920,10 +920,11 @@ main #contact .container ul li:last-child {
 main #contact .container ul li span {
   font-weight: bold;
   padding-right: 10px;
+  color: #000;
 }
 main #contact .container ul li p {
   font-weight: 300;
-  color: #000;
+  color: #000 !important;
 }
 main .news {
   padding-left: 200px;
