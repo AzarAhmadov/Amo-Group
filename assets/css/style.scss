@@ -61,7 +61,7 @@ body {
 
 #header {
     padding-left: 25px;
-    padding-right:25px;
+    padding-right: 25px;
     padding-top: 38px;
     position: relative;
     position: sticky;
@@ -121,11 +121,23 @@ body {
                                 letter-spacing: -0.017em;
                                 color: $color-1;
                                 cursor: pointer;
+                                position: relative;
+
+                                &.active {
+                                    &::after {
+                                        position: absolute;
+                                        bottom: -4px;
+                                        left: 0;
+                                        content: "";
+                                        width: 36px;
+                                        height: 2px;
+                                        background-color: #033641;
+                                    }
+                                }
                             }
 
                             ul {
                                 transition: 500ms all;
-                                
                                 top: 20px;
                                 position: absolute;
                                 left: 50%;
@@ -647,6 +659,7 @@ main {
 
                             a {
                                 width: 100%;
+
                                 .slide-img {
                                     width: 100%;
                                     height: 153px;
@@ -1815,7 +1828,7 @@ main {
             }
         }
 
-        .news{
+        .news {
             padding-top: 0;
         }
     }

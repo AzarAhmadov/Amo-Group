@@ -108,6 +108,17 @@ body {
   letter-spacing: -0.017em;
   color: #fff;
   cursor: pointer;
+  position: relative;
+}
+#header .container .row .h-average nav ul li a.active::after,
+#header .container .row .h-average nav ul li span.active::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 36px;
+  height: 2px;
+  background-color: #033641;
 }
 #header .container .row .h-average nav ul li ul {
   transition: 500ms all;
