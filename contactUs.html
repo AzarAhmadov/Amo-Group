@@ -8,8 +8,10 @@
     <title>Amo Group</title>
     <!-- Custom Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <style>
         header .container .row ul li a,
+        .title,
         .right,
         svg,
         select {
@@ -18,8 +20,7 @@
     </style>
 </head>
 
-<body id="faq-main">
-
+<body id="contactUs">
     <!-- Header Start -->
     <header id="header">
         <div class="container">
@@ -107,8 +108,8 @@
                             <li><a href="./amoGroup.html"> About us </a></li>
                             <li><a href="./carrer.html"> Carrer </a></li>
                             <li><a href="./similarPage.html"> News </a></li>
-                            <li><a href="./contactUs.html">Contact Us </a></li>
-                            <li><span> Companies </span>
+                            <li><a href="./similarPage.html">Contact Us </a></li>
+                            <li><span class="title"> Companies </span>
                                 <ul>
                                     <li><a href="./similarPage.html"> Amogro </a></li>
                                     <li><a href="./similarPage.html"> Amotrade </a></li>
@@ -143,34 +144,35 @@
     </header>
     <!-- Header End -->
 
-    <!-- Main Start -->
     <main>
-
-        <!-- Mobil Menu Start -->
-        <section class="mobil-menu">
-            <ul>
-                <li><a href="./amoGroup.html"> About us </a></li>
-                <li><a href="./similarPage.html"> Amogro </a></li>
-                <li><a href="./similarPage.html"> Amotrade </a></li>
-                <li><a href="./similarPage.html"> Amodo </a></li>
-                <li><a href="./similarPage.html"> Amotrans </a></li>
-                <li><a class="getOthers" href="#"> Others </a>
-                    <ul class="others">
-                        <li><a href="./carrer.html"> Carrer </a></li>
-                        <li><a href="#"> Contact US </a></li>
-                        <li><a href="#"> News </a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="close-btn-for-mobile">
-                <svg style="color:#fff !important" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-
+        <section id="contact">
+            <div class="container">
+                <h5> CONTACT US </h5>
+                <p class="content-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
+                </p>
+                <ul>
+                    <li>
+                        <span>Address:</span>
+                        <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet</p>
+                    </li>
+                    <li>
+                        <span>Email:</span>
+                        <p>office@amogroup.az</p>
+                    </li>
+                    <li>
+                        <span>Tel:</span>
+                        <p>(+994)55 510 00 00</p>
+                    </li>
+                    <li>
+                        <span>Fax:</span>
+                        <p>(+994)12 510 00 00</p>
+                    </li>
+                </ul>
+                <button class="global-btn"> Get in Touch </button>
             </div>
         </section>
-        <!-- Mobil Menu End -->
 
         <!-- Search Start -->
         <section class="search-area">
@@ -187,171 +189,7 @@
             </div>
         </section>
         <!-- Search End -->
-
-        <!-- Carrer Start -->
-        <section id="carrer">
-            <div class="container">
-                <div class="row">
-                    <div class="carrer-top">
-                        <h4>CAREER</h4>
-                        <div class="links">
-                            <a href="./carrer.html"> Vacanties </a>
-                            <a class="active" href="#"> FAQ </a>
-                        </div>
-                    </div>
-
-                    <div class="carrer-area">
-                        <div class="carrer-faq">
-                            <div class="carrer-top-faq">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam?
-                                </p>
-                                <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="20" height="20" fill="url(#pattern0)" fill-opacity="0.6" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_563_144" transform="scale(0.01)" />
-                                        </pattern>
-                                        <image id="image0_563_144" width="100" height="100"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="faq-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                                    luctus venenatis,
-                                    lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                                    elementum
-                                    facilisis leo.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carrer-faq">
-                            <div class="carrer-top-faq">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam?
-                                </p>
-                                <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="20" height="20" fill="url(#pattern0)" fill-opacity="0.6" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_563_144" transform="scale(0.01)" />
-                                        </pattern>
-                                        <image id="image0_563_144" width="100" height="100"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="faq-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                                    luctus venenatis,
-                                    lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                                    elementum
-                                    facilisis leo.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carrer-faq">
-                            <div class="carrer-top-faq">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam?
-                                </p>
-                                <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="20" height="20" fill="url(#pattern0)" fill-opacity="0.6" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_563_144" transform="scale(0.01)" />
-                                        </pattern>
-                                        <image id="image0_563_144" width="100" height="100"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="faq-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                                    luctus venenatis,
-                                    lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                                    elementum
-                                    facilisis leo.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carrer-faq">
-                            <div class="carrer-top-faq">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam?
-                                </p>
-                                <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="20" height="20" fill="url(#pattern0)" fill-opacity="0.6" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_563_144" transform="scale(0.01)" />
-                                        </pattern>
-                                        <image id="image0_563_144" width="100" height="100"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="faq-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                                    luctus venenatis,
-                                    lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                                    elementum
-                                    facilisis leo.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carrer-faq">
-                            <div class="carrer-top-faq">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam?
-                                </p>
-                                <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="20" height="20" fill="url(#pattern0)" fill-opacity="0.6" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_563_144" transform="scale(0.01)" />
-                                        </pattern>
-                                        <image id="image0_563_144" width="100" height="100"
-                                            xlink:href="data:image/png;base64,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" />
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="faq-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                                    luctus venenatis,
-                                    lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                                    elementum
-                                    facilisis leo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        <!-- Carrer End -->
-
     </main>
-    <!-- Main End -->
-
 
     <!-- Footer Start -->
     <footer class="footer">
@@ -397,7 +235,6 @@
     </footer>
     <!-- Footer End -->
 
-    <!-- App Js file -->
     <script src="./assets/js/app.js"></script>
 </body>
 

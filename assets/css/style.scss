@@ -24,14 +24,47 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
+.global-btn {
+    width: max-content;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 80px auto 0;
+    background: $button-back;
+    border-radius: 10px;
+    width: 350px;
+    height: 68px;
+    display: grid;
+    place-items: center;
+    color: $color-1;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.017em;
+    transition: 400ms all;
+
+    &:hover {
+        background: transparent;
+        border: 1px solid $button-back;
+        color: $button-back;
+    }
+
+}
+
 #header {
-    padding-top: 48px;
+    padding-top: 38px;
     position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
     &::after {
         position: absolute;
@@ -42,6 +75,7 @@ body {
         content: "";
         backdrop-filter: blur(3px);
         z-index: 100;
+        padding-bottom: 38px;
     }
 
     .container {
@@ -73,7 +107,8 @@ body {
                                 top: 30px;
                             }
 
-                            a {
+                            a,
+                            span {
                                 font-family: 'Open Sans', sans-serif;
                                 font-style: normal;
                                 font-weight: 400;
@@ -138,6 +173,11 @@ body {
                     letter-spacing: -0.017em;
                     color: $color-1;
                     opacity: 0.7;
+
+                    option {
+                        background: $button-back;
+                        color: $color-1;
+                    }
                 }
 
                 svg {
@@ -434,6 +474,7 @@ main {
 
     #article {
         padding-top: 140px;
+        padding-bottom: 100px;
 
         .container {
             max-width: 1310px;
@@ -548,6 +589,8 @@ main {
     }
 
     #similar-page {
+        padding-bottom: 100px;
+
         .container {
             max-width: 1310px;
             margin: 0 auto;
@@ -557,8 +600,7 @@ main {
                     .similar-top {
                         display: flex;
                         justify-content: center;
-                        padding-top: 132px;
-                        padding-bottom: 141px;
+                        padding: 110px 0;
                     }
 
                     .text {
@@ -587,16 +629,17 @@ main {
             display: flex;
             justify-content: center;
             margin: 0 auto;
+            min-height: 80vh;
 
             .row {
-
                 .carrer-top {
-                    padding-top: 50px;
+                    padding-top: 90px;
                     display: flex;
                     align-items: center;
 
                     h4 {
-                        margin-right: 92px;
+                        margin-left: 35px;
+                        margin-right: 52px;
                         font-family: 'Open Sans', sans-serif;
                         font-style: normal;
                         font-weight: 600;
@@ -628,25 +671,8 @@ main {
                 }
 
                 .carrer-area {
-                    margin-left: 250px;
-
-                    .apply {
-                        cursor: pointer;
-                        margin: 80px auto 0;
-                        background: $button-back;
-                        border-radius: 10px;
-                        width: 404px;
-                        height: 78px;
-                        display: grid;
-                        place-items: center;
-                        color: $color-1;
-                        font-family: 'Open Sans', sans-serif;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 41px;
-                        letter-spacing: -0.017em;
-                    }
+                    margin-left: 300px;
+                    margin-top: 44px;
 
                     .carrer-item {
                         display: flex;
@@ -660,7 +686,8 @@ main {
                         padding-top: 27px;
                         align-items: center;
                         justify-content: space-between;
-                        max-width: 1094px;
+                        max-width: 790px;
+                        margin-left: -50px;
 
                         .right {
                             display: flex;
@@ -718,7 +745,8 @@ main {
                             display: flex;
                             flex-direction: column;
                             align-items: flex-start;
-                            max-width: 967px;
+                            max-width: 790px;
+                            margin-left: -50px;
                             padding: 70px 30px;
 
                             h5 {
@@ -776,8 +804,9 @@ main {
                         padding-left: 35px;
                         padding-right: 14px;
                         padding-bottom: 21px;
-                        max-width: 965px;
+                        max-width: 790px;
                         flex-direction: column;
+                        margin-left: -50px;
 
                         .carrer-top-faq {
                             padding-top: 25px;
@@ -855,6 +884,97 @@ main {
             }
         }
     }
+
+    #contact {
+        padding-top: 90px;
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+
+            h5 {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 68px;
+                color: $button-back;
+                letter-spacing: -0.017em;
+            }
+
+            .content-title {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 37px;
+                text-align: center;
+                letter-spacing: -0.017em;
+                color: $color-2;
+                padding-top: 81px;
+            }
+
+            ul {
+                padding-top: 41px;
+
+                li {
+                    display: flex;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 41px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.017em;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        font-weight: bold;
+                        padding-right: 10px;
+                    }
+
+                    p {
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+#faq-main {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../images/bg3.png) no-repeat;
+    background-size: cover;
+}
+
+#aboutUs {
+    background: url(../images/AmoBack1.png) no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#similar {
+    background: url(../images/bg2.png) no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#contactUs {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../images/bg3.png) no-repeat;
+    background-size: cover;
 }
 
 #footer {
@@ -926,10 +1046,11 @@ main {
 }
 
 .footer {
-    margin-top: 100px;
-    padding-bottom: 37px;
+    padding: 20px 0;
 
     .container {
+
+
         .row {
             display: flex;
             justify-content: space-between;
@@ -1083,12 +1204,7 @@ main {
                         margin-left: 0px;
                         margin-top: 40px;
 
-                        .apply {
-                            width: max-content;
-                            font-size: 20px;
-                            margin-top: 30px;
-                            padding: 0 20px;
-                        }
+
 
                         .carrer-item {
                             flex-direction: column;
