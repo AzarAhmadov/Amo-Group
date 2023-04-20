@@ -1079,7 +1079,13 @@ main {
 
                     p {
                         font-weight: 300;
-                        color: $color-2 !important;
+                        color: #000 !important;
+                    }
+
+                    del {
+                        font-weight: 300;
+                        color: #000;
+                        border-bottom: 1px solid #000;
                     }
                 }
             }

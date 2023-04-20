@@ -926,6 +926,11 @@ main #contact .container ul li p {
   font-weight: 300;
   color: #000 !important;
 }
+main #contact .container ul li del {
+  font-weight: 300;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
 main .news {
   padding-left: 200px;
   padding-bottom: 50px;
