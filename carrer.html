@@ -6,17 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amo Group</title>
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-        body {
-            background: url(./assets/images/bg3.png) no-repeat;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-        }
-
         header .container .row ul li a,
+        .title,
         .right,
         svg,
         select {
@@ -25,7 +21,7 @@
     </style>
 </head>
 
-<body>
+<body id="Carrer">
 
     <!-- Header Start -->
     <header id="header">
@@ -113,9 +109,9 @@
                         <ul>
                             <li><a href="./amoGroup.html"> About us </a></li>
                             <li><a href="./carrer.html"> Carrer </a></li>
-                            <li><a href="./similarPage.html"> News </a></li>
+                            <li><a href="./news.html"> News </a></li>
                             <li><a href="./contactUs.html">Contact Us </a></li>
-                            <li><span> Companies </span>
+                            <li><span class="title"> Companies </span>
                                 <ul>
                                     <li><a href="./similarPage.html"> Amogro </a></li>
                                     <li><a href="./similarPage.html"> Amotrade </a></li>
@@ -157,15 +153,15 @@
         <section class="mobil-menu">
             <ul>
                 <li><a href="./amoGroup.html"> About us </a></li>
-                <li><a href="./similarPage.html"> Amogro </a></li>
-                <li><a href="./similarPage.html"> Amotrade </a></li>
-                <li><a href="./similarPage.html"> Amodo </a></li>
-                <li><a href="./similarPage.html"> Amotrans </a></li>
-                <li><a class="getOthers" href="#"> Others </a>
+                <li><a href="./carrer.html"> Carrer </a></li>
+                <li><a href="./news.html"> News </a></li>
+                <li><a href="./contactUs.html">Contact Us </a></li>
+                <li><button class="getOthers"> Companies <i class="fa-solid fa-chevron-right icon-arrow"></i> </button>
                     <ul class="others">
-                        <li><a href="./carrer.html"> Carrer </a></li>
-                        <li><a href="#"> Contact US </a></li>
-                        <li><a href="#"> News </a></li>
+                        <li><a href="./similarPage.html"> Amogro </a></li>
+                        <li><a href="./similarPage.html"> Amotrade </a></li>
+                        <li><a href="./similarPage.html"> Amotrans </a></li>
+                        <li><a href="./similarPage.html"> Amodo </a></li>
                     </ul>
                 </li>
             </ul>
@@ -203,7 +199,7 @@
                         <h4>CAREER</h4>
                         <div class="links">
                             <a class="active" href="./carrer.html"> Vacanties </a>
-                            <a href="./faq.html"> FAQ </a>
+                            <a class="color-change" href="./faq.html"> FAQ </a>
                         </div>
                     </div>
 

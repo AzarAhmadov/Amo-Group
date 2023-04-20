@@ -12,9 +12,11 @@ close_btn.addEventListener('click', () => {
 
 const others = document.querySelector('.others');
 const getOthers = document.querySelector('.getOthers');
+const iconArrow = document.querySelector('.icon-arrow')
 
 getOthers.addEventListener('click', () => {
     others.classList.toggle('active')
+    iconArrow.classList.toggle('active')
 })
 
 const close_btn_for_mobile = document.querySelector(".close-btn-for-mobile");

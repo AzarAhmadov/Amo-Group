@@ -8,19 +8,27 @@
     <title>Amo Group</title>
     <!-- Font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <style>
         header .container .row ul li a,
+        .title,
         .right,
         svg,
         select {
             color: #033641 !important;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
 </head>
 
-<body id="Carrer">
+<body id="newsImg">
 
     <!-- Header Start -->
     <header id="header">
@@ -174,77 +182,6 @@
         </section>
         <!-- Mobil Menu End -->
 
-        <!-- Carrer Start -->
-        <section id="carrer">
-            <div class="container">
-                <div class="row">
-                    <div class="carrer-top">
-                        <h4>CAREER</h4>
-                        <div class="links">
-                            <a class="active" href="./carrer.html"> Vacanties </a>
-                            <a href="./faq.html"> FAQ </a>
-                        </div>
-                    </div>
-
-                    <div class="carrer-area">
-
-                        <div class="carrer-item carrer-detail">
-                            <h5>
-                                Lorem ipsum dolor sit ame
-                            </h5>
-                            <h6>
-                                Lorem ipsum dolor sit ame:
-                            </h6>
-                            <p>
-                                Consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna
-                                fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
-                                vel
-                                fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis
-                                scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio
-                                facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac
-                                odio
-                                tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu,
-                                consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas
-                                fringilla phasellus faucibus
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
-
-                            </p>
-                            <span>
-                                purus sit amet luctus venenatis, lectus magna fringilla urna:
-                            </span>
-                            <p>
-                                porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla
-                                est
-                                ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque
-                                fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis
-                                mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio
-                                tempor
-                                orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu,
-                                consequat ac
-                                felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla
-                                phasellus faucibus
-                            </p>
-                            <span>
-                                Lorem ipsum dolor sit ame:
-                            </span>
-                            <p>
-                                Consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna
-                                fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
-                                vel
-                                fringilla est
-                            </p>
-                        </div>
-
-                        <button class="global-btn">
-                            Apply for Vacancy
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Carrer End -->
-
         <!-- Search Start -->
         <section class="search-area">
             <span> Search </span>
@@ -260,8 +197,54 @@
             </div>
         </section>
         <!-- Search End -->
+
+        <!-- News Detail Start -->
+        <section class="news news-detail">
+            <div class="container">
+                <h5> News </h5>
+                <div class="slide-flex">
+                    <div class="slide-area-news">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="./assets/images/slideDetail4.png" data-fancybox="images">
+                                        <img src="./assets/images/slideDetail4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./assets/images/slideDetail2.png" data-fancybox="images">
+                                        <img src="./assets/images/slideDetail2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./assets/images/slideDetail3.png" data-fancybox="images">
+                                        <img src="./assets/images/slideDetail3.png" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                    <div class="slide-txt">
+                        <h6>Lorem ipsum dolor sit amet </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque diam ornare ac proin.
+                            Facilisis hendrerit nisl cras lorem at pulvinar. Ipsum urna mi id morbi pharetra, enim. Ut
+                            amet,
+                            at quis posuere nunc. Sit morbi a neque id mattis facilisi pretium neque, nec. Vitae quis
+                            vitae
+                            lectus enim tincidunt. Elementum dui enim, enim sed pharetra sed. Pulvinar quis dictum vitae
+                            amet blandit. Sit duis lectus ultricies odio sagittis. Praesent mi turpis consequat ultrices
+                            tortor, praesent commodo. Diam donec aenean malesuada ut eget sed enim cursus. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Detail End -->
+    
     </main>
-    <!-- Main End -->
 
     <!-- Footer Start -->
     <footer class="footer">
@@ -307,7 +290,24 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- App Js file -->
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        $('[data-fancybox="images"]').fancybox({
+            buttons: [
+                "thumbs",
+                "close"
+            ],
+        });
+    </script>
 </body>
 
 </html>
