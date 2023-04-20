@@ -65,6 +65,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
+    padding-bottom: 38px;
 
     &::after {
         position: absolute;
@@ -75,7 +77,6 @@ body {
         content: "";
         backdrop-filter: blur(3px);
         z-index: 100;
-        padding-bottom: 38px;
     }
 
     .container {
@@ -342,7 +343,7 @@ main {
     }
 
     .search-area {
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -600,7 +601,9 @@ main {
                     .similar-top {
                         display: flex;
                         justify-content: center;
-                        padding: 110px 0;
+                        padding-top: 0px;
+                        padding-bottom: 50px;
+
                     }
 
                     .text {
@@ -683,7 +686,7 @@ main {
                         padding-left: 41px;
                         padding-right: 70px;
                         padding-bottom: 21px;
-                        padding-top: 27px;
+                        padding-top: 11px;
                         align-items: center;
                         justify-content: space-between;
                         max-width: 790px;
@@ -803,13 +806,12 @@ main {
                         margin: 15px 0;
                         padding-left: 35px;
                         padding-right: 14px;
-                        padding-bottom: 21px;
                         max-width: 790px;
                         flex-direction: column;
                         margin-left: -50px;
 
                         .carrer-top-faq {
-                            padding-top: 25px;
+                            padding: 14px 0;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
@@ -891,6 +893,7 @@ main {
         .container {
             max-width: 1000px;
             margin: 0 auto;
+            min-height: 70vh;
 
             h5 {
                 font-family: 'Open Sans';
@@ -911,11 +914,11 @@ main {
                 text-align: center;
                 letter-spacing: -0.017em;
                 color: $color-2;
-                padding-top: 81px;
+                padding-top: 71px;
             }
 
             ul {
-                padding-top: 41px;
+                padding-top: 71px;
 
                 li {
                     display: flex;
@@ -1204,14 +1207,19 @@ main {
                         margin-left: 0px;
                         margin-top: 40px;
 
-
+                        .carrer-faq {
+                            margin-left: 0;
+                        }
 
                         .carrer-item {
                             flex-direction: column;
                             width: 100%;
                             padding: 20px;
+                            margin-left: 0;
 
                             &.carrer-detail {
+                                margin-left: 0;
+
                                 h5 {
                                     font-size: 32px;
                                     line-height: 45px;
@@ -1261,6 +1269,44 @@ main {
                 }
             }
         }
+
+        #contact {
+            .container {
+                min-height: 78vh;
+
+                h5 {
+                    text-align: center;
+                }
+
+                .content-title {
+                    font-size: 30px;
+                    padding-top: 50px;
+                }
+
+                ul {
+                    padding-top: 50px;
+
+                    li {
+                        align-items: flex-start;
+
+                        p {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #similar-page {
+            padding-bottom: 100px;
+
+            .container {
+                max-width: 1310px;
+                margin: 0 auto;
+                min-height: 75vh;
+            }
+        }
+
     }
 }
 
@@ -1362,6 +1408,53 @@ main {
                 }
             }
         }
+
+        #contact {
+            padding-top: 20px;
+            min-height: 80vh;
+
+            .container {
+                h5 {
+                    font-size: 35px;
+                }
+
+                .content-title {
+                    font-size: 20px;
+                    padding-top: 20px;
+                    line-height: 25px;
+                }
+
+                ul {
+                    padding-top: 30px;
+
+                    li {
+                        flex-direction: column;
+
+                        span {
+                            font-size: 25px;
+                        }
+
+                        p {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #carrer {
+            .container {
+                .row {
+                    .carrer-top {
+                        padding-top: 0;
+
+                        h4 {
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #footer {
@@ -1391,6 +1484,8 @@ main {
 
 @media only screen and (max-width:480px) {
     #header {
+        padding: 13px 0;
+
         .container {
             .row {
                 .h-left {
@@ -1450,6 +1545,150 @@ main {
                 }
             }
         }
+
+        #contact {
+            padding-top: 0px;
+            min-height: 79vh;
+
+            .container {
+                h5 {
+                    font-size: 30px;
+                }
+
+                .content-title {
+                    font-size: 18px;
+                    padding-top: 10px;
+                    line-height: 25px;
+                }
+
+                button {
+                    margin-top: 30px;
+                    padding: 10px 20px;
+                    font-size: 21px;
+                    width: 200px;
+                    height: 60px;
+                }
+
+                ul {
+                    padding-top: 30px;
+
+                    li {
+                        flex-direction: column;
+
+                        span {
+                            font-size: 22px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #carrer {
+            .container {
+                .row {
+                    .carrer-area {
+                        button {
+                            margin-top: 30px;
+                            padding: 10px 20px;
+                            font-size: 21px;
+                            width: 100%;
+                            height: 60px;
+                        }
+
+                        .carrer-item {
+                            padding-top: 0;
+
+                            &.carrer-detail {
+                                padding: 20px 15px;
+
+                                h5,
+                                span {
+                                    font-size: 25px;
+                                }
+
+                                h6 {
+                                    font-size: 22px;
+                                    margin: 10px 0;
+                                }
+
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .left {
+                                span {
+                                    font-size: 25px;
+                                }
+
+                                p {
+                                    line-height: 24px;
+                                    font-size: 17px;
+                                }
+                            }
+
+                            .right {
+                                span {
+                                    font-size: 17px !important;
+                                    height: 24px;
+                                }
+
+                                .current-time {
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        .carrer-faq {
+                            padding-left: 10px;
+
+                            .faq-text {
+                                padding-bottom: 10px;
+
+                                p {
+                                    margin-top: 0;
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .carrer-top-faq {
+                                p {
+                                    margin: 0;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #similar-page {
+            .container {
+                .row {
+                    .similar-item {
+                        .similar-top {
+                            padding: 10px 0 30px;
+
+                            svg {
+                                height: 80px;
+                            }
+                        }
+
+                        .text {
+                            p {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #footer {
@@ -1489,6 +1728,8 @@ main {
     }
 
     .footer {
+        padding-top: 0;
+
         .container {
             .row {
                 .f-left {

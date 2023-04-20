@@ -55,6 +55,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
+  padding-bottom: 38px;
 }
 #header::after {
   position: absolute;
@@ -66,7 +68,6 @@ body {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   z-index: 100;
-  padding-bottom: 38px;
 }
 #header .container {
   position: relative;
@@ -293,7 +294,7 @@ main .swiper-container .swiper-wrapper .swiper-slide .slide-img .slide-text .lin
   color: #fff;
 }
 main .search-area {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -509,7 +510,8 @@ main #similar-page .container {
 main #similar-page .container .row .similar-item .similar-top {
   display: flex;
   justify-content: center;
-  padding: 110px 0;
+  padding-top: 0px;
+  padding-bottom: 50px;
 }
 main #similar-page .container .row .similar-item .text p {
   font-family: "Open Sans", sans-serif;
@@ -574,7 +576,7 @@ main #carrer .container .row .carrer-area .carrer-item {
   padding-left: 41px;
   padding-right: 70px;
   padding-bottom: 21px;
-  padding-top: 27px;
+  padding-top: 11px;
   align-items: center;
   justify-content: space-between;
   max-width: 790px;
@@ -682,13 +684,12 @@ main #carrer .container .row .carrer-area .carrer-faq {
   margin: 15px 0;
   padding-left: 35px;
   padding-right: 14px;
-  padding-bottom: 21px;
   max-width: 790px;
   flex-direction: column;
   margin-left: -50px;
 }
 main #carrer .container .row .carrer-area .carrer-faq .carrer-top-faq {
-  padding-top: 25px;
+  padding: 14px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -755,6 +756,7 @@ main #contact {
 main #contact .container {
   max-width: 1000px;
   margin: 0 auto;
+  min-height: 70vh;
 }
 main #contact .container h5 {
   font-family: "Open Sans";
@@ -774,10 +776,10 @@ main #contact .container .content-title {
   text-align: center;
   letter-spacing: -0.017em;
   color: #000;
-  padding-top: 91px;
+  padding-top: 71px;
 }
 main #contact .container ul {
-  padding-top: 91px;
+  padding-top: 71px;
 }
 main #contact .container ul li {
   display: flex;
@@ -994,10 +996,17 @@ main #contact .container ul li p {
     margin-left: 0px;
     margin-top: 40px;
   }
+  main #carrer .container .row .carrer-area .carrer-faq {
+    margin-left: 0;
+  }
   main #carrer .container .row .carrer-area .carrer-item {
     flex-direction: column;
     width: 100%;
     padding: 20px;
+    margin-left: 0;
+  }
+  main #carrer .container .row .carrer-area .carrer-item.carrer-detail {
+    margin-left: 0;
   }
   main #carrer .container .row .carrer-area .carrer-item.carrer-detail h5 {
     font-size: 32px;
@@ -1033,6 +1042,33 @@ main #contact .container ul li p {
   }
   main #carrer .container .row .carrer-area .carrer-item .right .past-time {
     font-size: 22px;
+  }
+  main #contact .container {
+    min-height: 78vh;
+  }
+  main #contact .container h5 {
+    text-align: center;
+  }
+  main #contact .container .content-title {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  main #contact .container ul {
+    padding-top: 50px;
+  }
+  main #contact .container ul li {
+    align-items: flex-start;
+  }
+  main #contact .container ul li p {
+    font-size: 22px;
+  }
+  main #similar-page {
+    padding-bottom: 100px;
+  }
+  main #similar-page .container {
+    max-width: 1310px;
+    margin: 0 auto;
+    min-height: 75vh;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1092,6 +1128,36 @@ main #contact .container ul li p {
   main #similar-page .container .row .similar-item .similar-top {
     padding: 40px 0;
   }
+  main #contact {
+    padding-top: 20px;
+    min-height: 80vh;
+  }
+  main #contact .container h5 {
+    font-size: 35px;
+  }
+  main #contact .container .content-title {
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 25px;
+  }
+  main #contact .container ul {
+    padding-top: 30px;
+  }
+  main #contact .container ul li {
+    flex-direction: column;
+  }
+  main #contact .container ul li span {
+    font-size: 25px;
+  }
+  main #contact .container ul li p {
+    font-size: 22px;
+  }
+  main #carrer .container .row .carrer-top {
+    padding-top: 0;
+  }
+  main #carrer .container .row .carrer-top h4 {
+    font-size: 35px;
+  }
   #footer .container .row .f-left p {
     font-size: 15px;
   }
@@ -1100,6 +1166,9 @@ main #contact .container ul li p {
   }
 }
 @media only screen and (max-width: 480px) {
+  #header {
+    padding: 13px 0;
+  }
   #header .container .row .h-left .logo svg {
     width: 150px;
   }
@@ -1131,6 +1200,99 @@ main #contact .container ul li p {
   main .swiper-container .swiper-wrapper .swiper-slide .slide-img .slide-text p {
     font-size: 17px;
   }
+  main #contact {
+    padding-top: 0px;
+    min-height: 79vh;
+  }
+  main #contact .container h5 {
+    font-size: 30px;
+  }
+  main #contact .container .content-title {
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 25px;
+  }
+  main #contact .container button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 21px;
+    width: 200px;
+    height: 60px;
+  }
+  main #contact .container ul {
+    padding-top: 30px;
+  }
+  main #contact .container ul li {
+    flex-direction: column;
+  }
+  main #contact .container ul li span {
+    font-size: 22px;
+  }
+  main #contact .container ul li p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  main #carrer .container .row .carrer-area button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 21px;
+    width: 100%;
+    height: 60px;
+  }
+  main #carrer .container .row .carrer-area .carrer-item {
+    padding-top: 0;
+  }
+  main #carrer .container .row .carrer-area .carrer-item.carrer-detail {
+    padding: 20px 15px;
+  }
+  main #carrer .container .row .carrer-area .carrer-item.carrer-detail h5,
+  main #carrer .container .row .carrer-area .carrer-item.carrer-detail span {
+    font-size: 25px;
+  }
+  main #carrer .container .row .carrer-area .carrer-item.carrer-detail h6 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  main #carrer .container .row .carrer-area .carrer-item.carrer-detail p {
+    font-size: 18px;
+  }
+  main #carrer .container .row .carrer-area .carrer-item .left span {
+    font-size: 25px;
+  }
+  main #carrer .container .row .carrer-area .carrer-item .left p {
+    line-height: 24px;
+    font-size: 17px;
+  }
+  main #carrer .container .row .carrer-area .carrer-item .right span {
+    font-size: 17px !important;
+    height: 24px;
+  }
+  main #carrer .container .row .carrer-area .carrer-item .right .current-time {
+    margin: 0;
+  }
+  main #carrer .container .row .carrer-area .carrer-faq {
+    padding-left: 10px;
+  }
+  main #carrer .container .row .carrer-area .carrer-faq .faq-text {
+    padding-bottom: 10px;
+  }
+  main #carrer .container .row .carrer-area .carrer-faq .faq-text p {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  main #carrer .container .row .carrer-area .carrer-faq .carrer-top-faq p {
+    margin: 0;
+    font-size: 17px;
+  }
+  main #similar-page .container .row .similar-item .similar-top {
+    padding: 10px 0 30px;
+  }
+  main #similar-page .container .row .similar-item .similar-top svg {
+    height: 80px;
+  }
+  main #similar-page .container .row .similar-item .text p {
+    font-size: 17px;
+  }
   #footer .container .row .f-left p {
     font-size: 15px;
   }
@@ -1149,6 +1311,9 @@ main #contact .container ul li p {
   }
   #footer .container .row .f-right ul li svg {
     margin-left: 0;
+  }
+  .footer {
+    padding-top: 0;
   }
   .footer .container .row .f-left p {
     font-size: 15px;
