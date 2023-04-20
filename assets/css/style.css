@@ -50,6 +50,8 @@ body {
 }
 
 #header {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 38px;
   position: relative;
   position: sticky;
@@ -1121,7 +1123,7 @@ main .news-detail .container .slide-flex .slide-txt p {
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 20px 15px;
 }
 .footer .container .row {
   display: flex;

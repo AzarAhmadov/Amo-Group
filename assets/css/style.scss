@@ -60,6 +60,8 @@ body {
 }
 
 #header {
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 38px;
     position: relative;
     position: sticky;
@@ -1316,7 +1318,7 @@ main {
 }
 
 .footer {
-    padding: 20px 0;
+    padding: 20px 15px;
 
     .container {
 
