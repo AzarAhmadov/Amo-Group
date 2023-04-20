@@ -235,7 +235,7 @@
                             </p>
                         </div>
 
-                        <button class="global-btn">
+                        <button id="apply" class="global-btn">
                             Apply for Vacancy
                         </button>
 
@@ -244,6 +244,33 @@
             </div>
         </section>
         <!-- Carrer End -->
+
+        <!-- Modal start -->
+        <div class="modal">
+            <form action="">
+                <label for="name">Name</label>
+                <input required type="text" id="name">
+
+                <label for="surname">Surname</label>
+                <input required type="text" id="surname">
+
+                <label for="number">Phone number</label>
+                <input required type="text" id="numberField">
+
+                <label for="email">Email</label>
+                <input required type="email" id="email">
+
+                <label for="email">Cv</label>
+                <input required type="file" id="cv" name="cv">
+
+                <button type="submit">Send <i class="fa-solid fa-paper-plane"></i> </button>
+
+                <div class="close-modal">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </form>
+        </div>
+        <!-- Modal End -->
 
         <!-- Search Start -->
         <section class="search-area">
@@ -260,6 +287,7 @@
             </div>
         </section>
         <!-- Search End -->
+
     </main>
     <!-- Main End -->
 
@@ -307,7 +335,23 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- App js file -->
     <script src="./assets/js/app.js"></script>
+    <script>
+        const applyBtn = document.getElementById("apply");
+        const modal = document.querySelector(".modal");
+        const closeModal = document.querySelector('.close-modal')
+
+        function showModal() {
+            modal.classList.add("active");
+        }
+
+        function hideModal() {
+            modal.classList.remove("active");
+        }
+        closeModal.addEventListener('click', hideModal);
+        applyBtn.addEventListener("click", showModal);
+    </script>
 </body>
 
 </html>

@@ -20,10 +20,11 @@
             color: #033641 !important;
         }
     </style>
+
 </head>
 
 <body id="contactUs">
-    
+
     <!-- Header Start -->
     <header id="header">
         <div class="container">
@@ -148,6 +149,7 @@
     <!-- Header End -->
 
     <main>
+
         <!-- Contact Start -->
         <section id="contact">
             <div class="container">
@@ -174,7 +176,7 @@
                         <p>(+994)12 510 00 00</p>
                     </li>
                 </ul>
-                <button class="global-btn"> Get in Touch </button>
+                <button class="global-btn" id="touch"> Get in Touch </button>
             </div>
         </section>
         <!-- Contact End -->
@@ -195,8 +197,8 @@
         </section>
         <!-- Search End -->
 
-         <!-- Mobil Menu Start -->
-         <section class="mobil-menu">
+        <!-- Mobil Menu Start -->
+        <section class="mobil-menu">
             <ul>
                 <li><a href="./amoGroup.html"> About us </a></li>
                 <li><a href="./carrer.html"> Carrer </a></li>
@@ -220,6 +222,34 @@
             </div>
         </section>
         <!-- Mobil Menu End -->
+
+        <!-- Modal start -->
+        <div class="modal">
+            <form action="">
+                <label for="name">Name</label>
+                <input required type="text" id="name">
+
+                <label for="surname">Surname</label>
+                <input required type="text" id="surname">
+
+                <label for="number">Phone number</label>
+                <input required type="text" id="numberField">
+
+                <label for="email">Email</label>
+                <input required type="email" id="email">
+
+                <label for="email">Cv</label>
+                <input required type="file" id="cv" name="cv">
+
+                <button type="submit">Send <i class="fa-solid fa-paper-plane"></i> </button>
+
+                <div class="close-modal">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </form>
+        </div>
+        <!-- Modal End -->
+
     </main>
 
     <!-- Footer Start -->
@@ -266,7 +296,24 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- App js file -->
     <script src="./assets/js/app.js"></script>
+    <script>
+        const contactBtn = document.getElementById("touch");
+        const modal = document.querySelector(".modal");
+        const closeModal = document.querySelector('.close-modal')
+
+        function showModal() {
+            modal.classList.add("active");
+        }
+
+        function hideModal() {
+            modal.classList.remove("active");
+        }
+
+        contactBtn.addEventListener("click", showModal);
+        closeModal.addEventListener('click', hideModal);
+    </script>
 </body>
 
 </html>

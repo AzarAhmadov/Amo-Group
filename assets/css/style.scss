@@ -194,6 +194,97 @@ body {
     }
 }
 
+.modal {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    z-index: 2000;
+    transition: 300ms all;
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        top: 50%;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+
+        i {
+            font-size: 45px;
+            color: rgb(158, 35, 35);
+        }
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        content: "";
+        backdrop-filter: blur(3px);
+    }
+
+    form {
+        background: $color-1;
+        display: flex;
+        position: relative;
+        z-index: 10;
+        padding: 45px 15px 15px 15px;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 500px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        label {
+            margin: 15px 0;
+            font-size: 20px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid $button-back;
+            padding: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            padding: 15px 30px;
+            font-size: 22px;
+            background-color: $button-back;
+            color: $color-1;
+            border-radius: 20px;
+            width: max-content;
+            border: 1px solid $button-back;
+            margin: 20px auto 0;
+            transition: 200ms all;
+
+            &:hover {
+                background: transparent;
+                border: 1px solid $button-back;
+                color: $button-back;
+            }
+        }
+    }
+}
+
 main {
     .swiper-container {
         width: 100%;
@@ -554,14 +645,17 @@ main {
                             flex-direction: column;
                             align-items: center;
 
-                            .slide-img {
+                            a {
                                 width: 100%;
-                                height: 153px;
-                                opacity: 0.8;
-                                border-radius: 30px;
-                                display: grid;
-                                place-items: center;
-                                background: $color-1;
+                                .slide-img {
+                                    width: 100%;
+                                    height: 153px;
+                                    opacity: 0.8;
+                                    border-radius: 30px;
+                                    display: grid;
+                                    place-items: center;
+                                    background: $color-1;
+                                }
                             }
 
                             .slide-text {
@@ -1815,6 +1909,19 @@ main {
             }
         }
 
+        .modal {
+            padding: 0 10px;
+
+            form {
+                width: 100%;
+
+                label {
+                    font-size: 18px;
+                }
+
+            }
+        }
+
         #contact {
             padding-top: 0px;
             min-height: 79vh;
@@ -1860,6 +1967,14 @@ main {
         #carrer {
             .container {
                 .row {
+                    .carrer-top {
+                        .links {
+                            a {
+                                font-size: 27px;
+                            }
+                        }
+                    }
+
                     .carrer-area {
                         button {
                             margin-top: 30px;
@@ -1914,7 +2029,7 @@ main {
                         }
 
                         .carrer-faq {
-                            padding-left: 10px;
+                            padding-left: 20px;
 
                             .faq-text {
                                 padding-bottom: 10px;
