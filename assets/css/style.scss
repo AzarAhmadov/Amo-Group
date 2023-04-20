@@ -1078,6 +1078,7 @@ main {
 
                     p {
                         font-weight: 300;
+                        color: $color-2;
                     }
                 }
             }
@@ -2098,7 +2099,7 @@ main {
 
         .news {
             .container {
-                padding: 0 40px;
+                padding: 0 30px;
 
                 h5 {
                     text-align: center;
@@ -2144,6 +2145,19 @@ main {
                     }
                 }
 
+            }
+        }
+
+        #article {
+            .container{
+                .row{
+                    .article-item{
+                        .article-top{
+                            
+                        padding: 15px 0 20px;
+                        }
+                    }
+                }
             }
         }
     }

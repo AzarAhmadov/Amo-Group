@@ -923,6 +923,7 @@ main #contact .container ul li span {
 }
 main #contact .container ul li p {
   font-weight: 300;
+  color: #000;
 }
 main .news {
   padding-left: 200px;
@@ -1616,7 +1617,7 @@ main .news-detail .container .slide-flex .slide-txt p {
     font-size: 17px;
   }
   main .news .container {
-    padding: 0 40px;
+    padding: 0 30px;
   }
   main .news .container h5 {
     text-align: center;
@@ -1650,6 +1651,9 @@ main .news-detail .container .slide-flex .slide-txt p {
   }
   main .news-detail .container .slide-flex .slide-txt p {
     font-size: 19px;
+  }
+  main #article .container .row .article-item .article-top {
+    padding: 15px 0 20px;
   }
   #footer .container .row .f-left p {
     font-size: 15px;
