@@ -1547,6 +1547,9 @@ main .news-detail .container .slide-flex .slide-txt p {
   main #carrer .container .row .carrer-top .links a {
     font-size: 27px;
   }
+  main #carrer .container .row .carrer-area {
+    padding-bottom: 10px;
+  }
   main #carrer .container .row .carrer-area button {
     margin-top: 30px;
     padding: 10px 20px;
