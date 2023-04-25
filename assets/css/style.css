@@ -926,8 +926,11 @@ main #contact .container ul li p {
   font-weight: 300;
   color: #000;
 }
-main #contact .container ul li p.num {
+main #contact .container ul li address a {
+  font-style: initial;
+  color: #000;
   border-bottom: 1px solid #000;
+  font-weight: 300;
 }
 main .news {
   padding-left: 200px;
@@ -1548,6 +1551,9 @@ main .news-detail .container .slide-flex .slide-txt p {
   main #contact .container ul li p {
     font-size: 20px;
     line-height: 25px;
+  }
+  main #contact .container address a {
+    font-size: 22px;
   }
   main #carrer .container .row .carrer-top .links a {
     font-size: 27px;

@@ -1080,9 +1080,14 @@ main {
                     p {
                         font-weight: 300;
                         color: $color-2;
+                    }
 
-                        &.num {
+                    address {
+                        a {
+                            font-style: initial;
+                            color: $color-2;
                             border-bottom: 1px solid $color-2;
+                            font-weight: 300;
                         }
                     }
                 }
@@ -1983,6 +1988,12 @@ main {
                             font-size: 20px;
                             line-height: 25px;
                         }
+                    }
+                }
+
+                address{
+                    a{
+                        font-size: 22px;
                     }
                 }
             }
