@@ -668,6 +668,16 @@ main {
                                     place-items: center;
                                     background: $color-1;
                                 }
+
+                                span {
+                                    font-family: 'Open Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 30px;
+                                    line-height: 41px;
+                                    color: $color-2;
+                                    letter-spacing: -0.017em;
+                                }
                             }
 
                             .slide-text {
@@ -1083,6 +1093,7 @@ main {
 
                     address {
                         color: $color-2;
+
                         a {
                             font-style: initial;
                             color: $color-2;
@@ -1991,8 +2002,8 @@ main {
                     }
                 }
 
-                address{
-                    a{
+                address {
+                    a {
                         font-size: 22px;
                     }
                 }

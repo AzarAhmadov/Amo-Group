@@ -580,6 +580,15 @@ main #article .container .amo-slider .swiper .swiper-wrapper .swiper-slide a .sl
   place-items: center;
   background: #fff;
 }
+main #article .container .amo-slider .swiper .swiper-wrapper .swiper-slide a span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000;
+  letter-spacing: -0.017em;
+}
 main #article .container .amo-slider .swiper .swiper-wrapper .swiper-slide .slide-text h5 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
