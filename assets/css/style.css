@@ -926,6 +926,9 @@ main #contact .container ul li p {
   font-weight: 300;
   color: #000;
 }
+main #contact .container ul li address {
+  color: #000;
+}
 main #contact .container ul li address a {
   font-style: initial;
   color: #000;
