@@ -924,11 +924,9 @@ main #contact .container ul li span {
 }
 main #contact .container ul li p {
   font-weight: 300;
-  color: #000 !important;
-}
-main #contact .container ul li del {
-  font-weight: 300;
   color: #000;
+}
+main #contact .container ul li p.num {
   border-bottom: 1px solid #000;
 }
 main .news {

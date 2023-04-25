@@ -1079,13 +1079,11 @@ main {
 
                     p {
                         font-weight: 300;
-                        color: #000 !important;
-                    }
+                        color: $color-2;
 
-                    del {
-                        font-weight: 300;
-                        color: #000;
-                        border-bottom: 1px solid #000;
+                        &.num {
+                            border-bottom: 1px solid $color-2;
+                        }
                     }
                 }
             }
